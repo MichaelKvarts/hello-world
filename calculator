@@ -1,0 +1,28 @@
+a = float(input())
+b = float(input())
+x = input()
+if x == '+':
+    print(a + b)
+elif x == '-':
+    print(a - b)
+elif x == '*':
+    print(a * b)
+elif x == '/':
+    if b == 0.0:
+        print('Division by ZERO!')
+    else:
+        print(a / b)
+elif x == 'div':
+    if b == 0.0:
+        print('Division by ZERO!')
+    else:
+        print(a // b)
+elif x == 'mod':
+    if b == 0.0:
+        print('Division by ZERO!')
+    else:
+        print(a % b)
+elif x == 'pow':
+    print(a ** b)
+else:
+    print('Undefined operation')
