@@ -1,6 +1,6 @@
-a = float(input())
-b = float(input())
-x = input()
+a = float(input('enter the first number: '))
+b = float(input('enter the second number: '))
+x = input('Please type in the math operation you would like to complete: ')
 if x == '+':
     print(a + b)
 elif x == '-':
@@ -12,17 +12,17 @@ elif x == '/':
         print('Division by ZERO!')
     else:
         print(a / b)
-elif x == 'div':
+elif x == 'div' or x == '//':
     if b == 0.0:
         print('Division by ZERO!')
     else:
         print(a // b)
-elif x == 'mod':
+elif x == 'mod' or x == '%':
     if b == 0.0:
         print('Division by ZERO!')
     else:
         print(a % b)
-elif x == 'pow':
+elif x == 'pow' or x == '**':
     print(a ** b)
 else:
     print('Undefined operation')
